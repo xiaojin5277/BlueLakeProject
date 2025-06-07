@@ -1,0 +1,126 @@
+body * {
+	box-sizing: border-box;
+	flex-shrink: 0;
+}
+
+body {
+	font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma,
+		Arial, PingFang SC-Light, Microsoft YaHei;
+	margin: 0px;
+}
+
+input {
+	background-color: transparent;
+	border: 0;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	outline: none;
+	background-color: transparent;
+}
+
+button:active {
+	opacity: 0.6;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.justify-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.justify-center {
+	display: flex;
+	justify-content: center;
+}
+
+.justify-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.justify-evenly {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.justify-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.justify-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.align-start {
+	display: flex;
+	align-items: flex-start;
+}
+
+.align-center {
+	display: flex;
+	align-items: center;
+}
+
+.align-end {
+	display: flex;
+	align-items: flex-end;
+}
+
+.section_1 {
+	height: 16.46vw;
+	background: url(./lanhu_datasets2/img/SketchPngd6408ff75518de65f350b703d53722c81a778dfc600736ab4cda372f7ec2bc0c.png) no-repeat;
+	background-size: 100% 100%;
+	width: 100vw;
+}
+
+.text-wrapper_7 {
+	width: 12.24vw;
+	height: 3.13vw;
+	margin: 2.96vw 0 0 43.9vw;
+}
+
+.text_60 {
+	width: 12.24vw;
+	height: 3.13vw;
+	overflow-wrap: break-word;
+	color: rgba(255, 255, 255, 1);
+	font-size: 2.91vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	text-align: left;
+	white-space: nowrap;
+	line-height: 3.13vw;
+}
+
+.text-wrapper_8 {
+	width: 25.63vw;
+	height: 3.13vw;
+	margin: 0.98vw 0 3.22vw 37.18vw;
+}
+
+.text_61 {
+	width: 25.63vw;
+	height: 3.13vw;
+	overflow-wrap: break-word;
+	color: rgba(255, 255, 255, 1);
+	font-size: 1.35vw;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	text-align: center;
+	line-height: 3.13vw;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="./echarts.js"></script>
+		<title>Document</title>
+		<style>
+			#line {
+				width: 80vw;
+				height: 40vw;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="line"></div>
+		<script>
+			// 折线图
+			// 基于准备好的dom，初始化echarts实例
+			var line = echarts.init(document.getElementById('line'));
+			// 指定图表的配置项和数据
+			lineOption = {
+				// 标题
+				title: {
+					text: 'AVERAGE(%)'
+				},
+				// 图例
+				tooltip: {
+					trigger: "axis",
+					backgroundColor: "#1677FF",
+					// {a}（系列名称），{b}（类目值），{c}（数值）, {d}（无）
+					formatter: "{a}：{c}元"
+				},
+				xAxis: {
+					type: 'category',
+					// boundaryGap: false, // y轴靠左
+					data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+				},
+				yAxis: {
+					type: 'value'
+				},
+				series: [{
+					name: '价格', // 只需要写一次，后续也不会有改变
+					data: [820, 932, 901, 934, 1290, 1330, 1320],
+					type: 'line',
+					smooth: true // 设置弧度
+				}, {
+					symbol: 'circle', // 将小圆点改成实心，default空心
+					data: [810, 922, 941, 924, 120, 1430, 1220],
+					type: 'scatter' // 隐藏折线
+				}]
+			};
+			line.setOption(lineOption);
+		</script>
+	</body>
+</html>
