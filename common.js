@@ -6,10 +6,8 @@ function translateLanguage() {
 	if (pattern.test(type)) {
 		$(".tranLang").css("width", "30vw");
 		translate.changeLanguage("english"); //chinese_simplified-简体  english-英语
-		alert("English");
 	} else {
 		translate.changeLanguage("chinese_simplified"); //chinese_simplified-简体  english-英语
-		alert("Chinese");
 		// window.location.href = "index.html"; //jQuery控制页面跳转
 	}
 	translate.setUseVersion2(); //设置使用v2.x 版本
