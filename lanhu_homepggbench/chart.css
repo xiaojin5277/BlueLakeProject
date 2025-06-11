@@ -1,0 +1,102 @@
+.performance-comparison {
+	width: 70%;
+	margin-top: 1vw;
+	margin-left: 14vw;
+}
+
+.grid {
+	width: 70%;
+	margin-top: 1vw;
+	margin-left: 9.6vw;
+}
+
+.chart-title,
+.performance-comparison h3 {
+	color: #1e40af;
+	font-size: 1.5vw;
+}
+
+.ranking-table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 1vw;
+	overflow: hidden;
+}
+
+.ranking-table th,
+.ranking-table td {
+	padding: 0.5vw;
+	text-align: center;
+	border-bottom: 0.1vw solid #e5e7eb;
+	font-size: 1vw;
+}
+
+.ranking-table th {
+	background: linear-gradient(135deg, #1f2937, #374151);
+	color: #fff;
+}
+
+.ranking-table tr:hover {
+	background-color: #f9fafb;
+}
+
+.rank-badge {
+	border-radius: 0.3VW;
+	font-size: 1vw;
+	color: #fff;
+}
+
+.rank-1 {
+	background: linear-gradient(45deg, #ffd700, #ffed4e);
+	color: #1f2937;
+}
+
+.rank-2 {
+	background: linear-gradient(45deg, #c0c0c0, #e5e7eb);
+	color: #1f2937;
+}
+
+.rank-3 {
+	background: linear-gradient(45deg, #cd7f32, #d97706);
+}
+
+.rank-4,
+.rank-5,
+.rank-6,
+.rank-7 {
+	background: linear-gradient(45deg, #6b7280, #9ca3af);
+}
+
+.entity-tag {
+	border-radius: 0.5vw;
+	font-size: 1.1vw;
+	margin-left: 2vw;
+}
+
+.Human {
+	margin-left: -0.01vw;
+	border-radius: 0.2VW;
+	font-size: 0.8vw;
+	background: #10b981;
+	color: #fff;
+}
+
+.AI {
+	margin-left: -0.01vw;
+	border-radius: 0.2VW;
+	font-size: 0.8vw;
+	background: #3b82f6;
+	color: #fff;
+}
+
+.chart-container {
+	height: 30vw;
+	margin-bottom: 2vw;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3vw;
+	margin-bottom: 2vw;
+}

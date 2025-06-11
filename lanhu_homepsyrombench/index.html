@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"></script>
+		<title>Document</title>
+		<script src="../common.js"></script>
+		<script src="https://cdn.staticfile.net/translate.js/3.1.7/translate.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./common.css" />
+		<link rel="stylesheet" type="text/css" href="./index.response.css" />
+		<link rel="stylesheet" type="text/css" href="./chart.css" />
+	</head>
+
+	<body>
+		<div class="page flex-col">
+			<div class="section_1 flex-row">
+				<img class="image_1" referrerpolicy="no-referrer"
+					src="./img/SketchPnge80e3ebf9f3621b782d1b03e63dab26ab7746080e812355815eed21f42ede013.png" />
+				<span class="text_1">WGSR-Bench</span>
+				<div class="box_1 flex-row">
+					<img class="thumbnail_1" referrerpolicy="no-referrer"
+						src="./img/SketchPng8ee1658974d20f2e1abcdf87e755c756a45d7562ca68329288371e2b08569959.png" />
+					<input type="text" style="margin-left: 0.5vw; width: 16.9vw;"
+						placeholder="Search&nbsp;models,datasets" />
+				</div>
+				<a class="text_3" href="../lanhu_homepsyrombench/index.html" style="text-decoration: none;">Home</a>
+				<a class="text_4" href="../lanhu_datasetspsyrombench/index.html"
+					style="text-decoration: none;">Datasets</a>
+				<a class="text_5" href="" style="text-decoration: none;">assessment&nbsp;centre</a>
+				<button class="text_6" onclick="translateLanguage()">中&nbsp;|&nbsp;EN</button>
+			</div>
+			<div class="section_50 flex-col">
+				<span class="paragraph_1">
+					WGSR-Bench:&nbsp;Wargame-based&nbsp;Game-theoretic&nbsp;Strategic&nbsp;
+					<br />
+					Reasoning&nbsp;Benchmark&nbsp;for&nbsp;Large&nbsp;Models
+				</span>
+				<div class="text-wrapper_39 flex-row">
+					<a class="text_112" href="../lanhu_homemmsabench/index.html"
+						style="text-decoration: none;">MM-SA-Bench</a>
+					<a class="text_113" href="../lanhu_homepggbench/index.html"
+						style="text-decoration: none; margin-left: 2vw;">PGG-Bench</a>
+					<a class="text_114" href="../lanhu_homepsyrombench/index.html"
+						style="text-decoration: none; margin-left: 2vw;">PsyR-OM-Bench</a>
+				</div>
+				<div style="width: 90vw; overflow: hidden;">
+					<div class="chart-section" style="width: 100vw; padding-left: 14vw;">
+						<h2 class="chart-title">人机综合表现对比分析</h2>
+						<div class="chart-container small">
+							<canvas id="myChart"></canvas>
+						</div>
+					</div>
+
+					<div class="performance-comparison">
+						<h3>📊 综合排名对比</h3>
+						<table class="ranking-table">
+							<thead>
+								<tr>
+									<th rowspan="2">排名</th>
+									<th rowspan="2">参与者</th>
+									<th rowspan="2">类型</th>
+									<th rowspan="2">综合得分</th>
+									<th colspan="4">风险回报识别</th>
+									<th colspan="4">策略倾向预测</th>
+								</tr>
+								<tr>
+									<th>高风险</th>
+									<th>低风险</th>
+									<th>长期回报</th>
+									<th>短期回报</th>
+									<th>高风险</th>
+									<th>低风险</th>
+									<th>长期回报</th>
+									<th>短期回报</th>
+								</tr>
+							</thead>
+							<tbody id="rankingTableBody"></tbody>
+							<!-- 表格内容将由JavaScript生成 -->
+						</table>
+					</div>
+					<div class="grid">
+						<div class="chart-section" style="width: 30vw; text-align: center;">
+							<h2 class="chart-title">各维度能力雷达图</h2>
+							<div class="chart-container">
+								<canvas id="radarChart"></canvas>
+							</div>
+						</div>
+
+						<div class="chart-section" style="width: 40vw; text-align: center;">
+							<h2 class="chart-title">细分能力表现</h2>
+							<div class="chart-container">
+								<canvas id="categoryChart"></canvas>
+							</div>
+						</div>
+					</div>
+
+					<div class="chart-section" style="width: 65vw; padding-left: 14vw; text-align: center;">
+						<h2 class="chart-title">人类与AI在不同分析复杂度上的表现差异</h2>
+						<div class="chart-container small">
+							<canvas id="complexityChart"></canvas>
+						</div>
+					</div>
+				</div>
+				<script src="./flexible.js"></script>
+	</body>
+
+</html>

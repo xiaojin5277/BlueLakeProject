@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="./flexible.js"></script>
+		<script src="../common.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"></script>
+		<script src="https://cdn.staticfile.net/translate.js/3.1.7/translate.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./common.css" />
+		<link rel="stylesheet" type="text/css" href="./index.response.css" />
+	</head>
+
+	<body>
+		<div class="page flex-col">
+			<div class="box_1 flex-col"></div>
+			<div class="box_14 flex-row">
+				<a class="text_1" href="../lanhu_datasetsmmsabench/index.html"
+					style="text-decoration: none;">MM-SA-Bench</a>
+				<div class="image-text_14 flex-row justify-between">
+					<img class="label_1" referrerpolicy="no-referrer"
+						src="./img/SketchPng61a0b6a62ece3953daf491e9909edb2d6f6fef33fc797445a59aa8df770bbbb2.png" />
+					<a class="text-group_1" href="../lanhu_datasetspggbench/index.html"
+						style="text-decoration: none;">PGG-Bench</a>
+				</div>
+				<a class="text_2" href="../lanhu_datasetspsyrombench/index.html"
+					style="text-decoration: none;">PsyR-OM-Bench</a>
+			</div>
+			<div class="box_3 flex-col">
+				<div class="block_1 flex-col"></div>
+			</div>
+			<div class="text-wrapper_35 flex-row">
+				<span class="text_3">♟️</span>
+				<span class="text_4">非合作博弈</span>
+				<span class="text_49">⚖️</span>
+				<span class="text_50">不完全信息博弈</span>
+			</div>
+			<div class="box_15 flex-row justify-between">
+				<div class="section_4 flex-row">
+					<div class="image-text_15 flex-col justify-between">
+						<div class="block_2 flex-col"></div>
+						<div class="text-group_8">
+							<span class="text_51">QUESTION:</span>
+							<span class="paragraph_13">
+								蓝方视角有两个敌方步兵和一个坦克。蓝方0023步兵与红方0017重型坦克相距为10。蓝方0023步兵针对位于3840的红方0004重型坦克，应使用什么武器进行打击？
+								<br />
+								A.便携导弹（对地）
+								<br />
+								B.中型导弹
+								<br />
+								C.机关枪&nbsp;
+								<br />
+								D.其他（请自行填写）
+								<br />
+
+							</span>
+							<span class="text_52">ANSWER:</span>
+							<span class="paragraph_14">
+								A
+								<br />
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="section_5 flex-row">
+					<div class="image-text_16 flex-col justify-between">
+						<div class="group_5 flex-col"></div>
+						<div class="text-group_9">
+							<span class="text_53">QUESTION:</span>
+							<span class="paragraph_15">
+								红方有0008无人机，目前敌方已经夺控，两个次要夺控点，红方视野中敌方算子较少。红方派遣无人机0008深入敌方算子聚集区获取高价值情报的风险与收益如何？&nbsp;
+								<br />
+								A.风险高收益高&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<br />
+								B.风险低收益低&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<br />
+								C.风险高收益低&nbsp;&nbsp;&nbsp;&nbsp;
+								<br />
+								D.其他（请自行填写）
+								<br />
+
+							</span>
+							<span class="text_54">ANSWER:</span>
+							<span class="paragraph_16">
+								A
+								<br />
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-wrapper_36 flex-row">
+				<span class="text_55">🕹️</span>
+				<span class="text_56">序贯博弈</span>
+				<span class="text_57">📡</span>
+				<span class="text_58">联盟协同</span>
+			</div>
+			<div class="box_16 flex-row justify-between">
+				<div class="box_11 flex-row">
+					<div class="image-text_17 flex-col justify-between">
+						<div class="group_6 flex-col"></div>
+						<div class="text-group_10">
+							<span class="text_59">QUESTION:</span>
+							<span class="paragraph_17">
+								蓝方巡飞弹0035侦察到3337位置有步兵下车，0035巡飞弹攻击重型战车后死亡，蓝方视野内3337位置有一个重型战车。位于3433的0036巡飞弹面对当前局势，应选择哪种路径前进？&nbsp;
+								<br />
+								A.3433-&gt;3333-&gt;3334-&gt;3335-&gt;3336&nbsp;
+								<br />
+								B.3433-&gt;3434-&gt;3435-&gt;3436-&gt;3437&nbsp;
+								<br />
+								C.静止不动&nbsp;
+								<br />
+								D.其他（请自行填写）
+								<br />
+
+							</span>
+							<span class="text_60">ANSWER:</span>
+							<span class="paragraph_18">
+								A
+								<br />
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="box_12 flex-row">
+					<div class="image-text_18 flex-col justify-between">
+						<div class="box_13 flex-col"></div>
+						<div class="text-group_11">
+							<span class="text_61">QUESTION:</span>
+							<span class="paragraph_19">
+								蓝方39无人机视角内出现步兵和重型战车，重型战车即将移动到无人机视野外。可引导的算子有109重型战车和42重型战车，后者距离较远。蓝方应选择哪些算子执行引导任务，哪些执行火力打击任务？如何配合？&nbsp;&nbsp;
+								<br />
+								A.39引导42重型战车射击&nbsp;
+								<br />
+								B.39引导109重型战车射击&nbsp;
+								<br />
+								C.39引导101重型战车射击&nbsp;
+								<br />
+								D.其他（请自行填写）&nbsp;
+								<br />
+
+							</span>
+							<span class="text_62">ANSWER:</span>
+							<span class="paragraph_20">
+								A
+								<br />
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-wrapper_37 flex-row justify-between">
+				<span class="text_10">📚</span>
+				<span class="text_11">ABOUT&nbsp;US</span>
+			</div>
+			<div class="text-wrapper_5">
+				<span class="text_12">PGG-Bench:</span>
+				<span class="paragraph_2">
+					本项目介绍了一个基准数据集，旨在测试大语言模型（LLM）在博弈论领域的策略生成能力。
+					<br />
+					<br />
+				</span>
+				<span class="text_13">
+					在我们这个日益复杂的世界中，策略生成至关重要，无论是在商业竞争、技术研发还是日常生活中，多方博弈与决策都十分普遍。高效的策略生成包含以下几个核心环节：
+				</span>
+				<span class="paragraph_3"><br /></span>
+				<span class="text_14">•&nbsp;信息预测：</span>
+				<span class="paragraph_4">
+					基于现有信息洞察未来趋势。
+					<br />
+				</span>
+				<span class="text_15">•&nbsp;多步推断：</span>
+				<span class="paragraph_5">
+					要求深思熟虑、层层递进的思考能力。
+					<br />
+				</span>
+				<span class="text_16">•&nbsp;博弈思维：</span>
+				<span class="paragraph_6">
+					理解局中各方的动机与可能行动，从而实现更高阶的策略生成。
+					<br />
+					<br />
+					策略生成的重要性在于其能直接影响高影响决策的质量，帮助应对复杂的多因素环境，并有潜力突破常规推理的局限以发现创新解决方案。然而，实现这些能力面临诸多挑战，例如环境的不确定性、对长链推理能力的需求，以及在多方参与场景下进行有效合作思维的考验。攻克这些难题能够显著改进决策质量，推动模型创新（尤其对大语言模型而言），并赋能广泛的跨领域应用。
+					<br />
+					<br />
+					尽管传统的策略生成方法依赖于“预设模型加算法”的方式，在边界清晰、规则明确的场景下能提供高精度和可控性，但它们往往对真实场景的适应性不足，并在扩展性和泛化能力上存在困难。近年来，以大语言模型（LLM）为代表的新技术为此提供了新的思路，它们展现出从海量数据中学习策略模式、有效处理非结构化信息的能力，并在迁移学习和适应性方面表现出较强的潜力。
+					<br />
+					<br />
+					尽管取得了这些进展，但在将大语言模型应用于严肃的、高风险的策略生成任务时，依然面临一系列困难：
+					<br />
+				</span>
+				<span class="text_17">•&nbsp;知识的准确性和时效性：</span>
+				<span class="paragraph_7">
+					大语言模型的知识主要来源于其训练数据，这些数据可能存在过时、错误或偏见。
+					<br />
+				</span>
+				<span class="text_18">
+					•&nbsp;深度理解、复杂推理与因果推断能力的局限：
+				</span>
+				<span class="paragraph_8">
+					虽然大语言模型能够生成流畅的文本，但在真正理解复杂问题的深层逻辑、进行多步骤的严密推理以及准确判断因果关系方面仍有较大提升空间。
+					<br />
+				</span>
+				<span class="text_19">•&nbsp;策略的实用性、可解释性与可控性挑战：</span>
+				<span class="paragraph_9">
+					确保大语言模型生成的策略在现实世界中能够有效执行、其推导过程可被理解（可解释性），以及其行为在需要时可被引导和控制（可控性），这些都是决定其策略生成能力能否真正落地应用的关键。
+					<br />
+					<br />
+					为了应对在这一领域系统性评估大语言模型能力的需求，本项工作致力于构建一个基于问答（Q&amp;A）的评测数据集。该数据集的构建思路始于对开放博弈（Open&nbsp;Game）及组合博弈论的基本理解，并选择以兵棋推演的复杂数据作为其基石。它围绕四类典型的博弈任务进行构建，即“Atom博弈”（非合作博弈）、“并联”（不完美信息博弈）、“串联”（序贯博弈）和“混合”（联盟或合作博弈），并将其进一步细化拆解为多达28种具体的决策类型。该基准旨在通过提供广泛的复杂性分布和丰富的策略类型，评估LLM在生成战术对抗策略方面的能力，尤其是在模拟的人机对抗环境中。
+				</span>
+			</div>
+			<div class="box_5 flex-col">
+				<div class="box_17 flex-row">
+					<img class="image_1" referrerpolicy="no-referrer"
+						src="./img/SketchPng16893ba8c8f4602597ebd56c924ab88689209bebb39442ab43a1ccea9272426b.png" />
+					<span class="text_20">WGSR-Bench</span>
+					<div class="group_2 flex-row">
+						<img class="thumbnail_1" referrerpolicy="no-referrer"
+							src="./img/SketchPng8ee1658974d20f2e1abcdf87e755c756a45d7562ca68329288371e2b08569959.png" />
+						<input type="text" style="margin-left: 0.5vw; width: 17vw;"
+							placeholder="Search&nbsp;models,datasets" />
+					</div>
+					<a class="text_22" href="../lanhu_homepggbench/index.html" style="text-decoration: none;">Home</a>
+					<a class="text_23" href="../lanhu_datasetspggbench/index.html"
+						style="text-decoration: none;">Datasets </a>
+					<a class="text_24" href="" style="text-decoration: none;">assessment&nbsp;centre</a>
+					<button class="text_25" onclick="translateLanguage()">中&nbsp;|&nbsp;EN</button>
+				</div>
+				<div class="text-wrapper_38 flex-row">
+					<span class="text_26">Datasets</span>
+				</div>
+				<div class="text-wrapper_39 flex-row">
+					<span class="text_27">
+						Examples&nbsp;and&nbsp;introductions&nbsp;of&nbsp;datasets
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
